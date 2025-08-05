@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Beatriz</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <div id="container">
+        <header id="cab">Ana Beatriz</header>
+        <nav id="menu">
+            <div class="btn">
+                <a href="index.html">Início</a>
+            </div>
+            <div class="btn">
+                <a href="hobbies.html">Hobbies</a>
+            </div>
+            <div class="btn">
+                <a href="curiosidades.html">Curiosidades</a>
+            </div>
+            <div class="btn">
+                <a href="formulario.html">Formulário</a>
+            </div>
+        </nav>
+    </div>
+    <section id="main">
+        <from action=" " method="get" name="Quiz">
+            <h2>Quiz:</h2>
+            <fieldset>
+            <label for="nome">Nome: </label>
+            <input type="text" name="txtNome" id="txtNome" size="15" required/>
+            <br/>
+            <label for="dtNascimento">Data Nascimento: </label>
+            <input type="date" name="DtNascimento" id="dtNascimento" required>
+            <br/>
+            <label for="raca">Raça dos meus cachorros: </label>
+            <select>
+                <option value="Poddle"> Poddle</option>
+                <option value="Dachshund">Dachshund</option>
+                <option value="Pug">Pug</option>
+                <option value="Maltês">Maltês</option>
+            </select>
+            <br/>
+            <label for="viagem">Viagem que quero muito fazer:</label>
+            <input list="viagem" id="isViagem" name="isViagem">
+            <datalist id="viagem">
+                <option value="Grécia"></option>
+                <option value="Canadá"></option>
+                <option value="Itália"></option>
+                <option value="Coreia"></option>
+            </datalist>
+            </fieldset>
+            <input type="submit" value="Salvar">
+    </section>
+<footer id="rodape">Autoapresentação-08/08/2025</footer>
+</body>
