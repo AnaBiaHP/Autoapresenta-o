@@ -6,8 +6,12 @@ header{
     text-align: center;
 }
 
+p{
+    text-align: center;
+}
+
 h2,legend{
-    font-size:30pt;
+    font-size:35pt;
     font-family:Arial, Helvetica, sans-serif;
     background-color:violet;
     color:darkmagenta;
@@ -17,6 +21,10 @@ h2,legend{
     font-size: 15pt;
     font-family: Arial, Helvetica, sans-serif;
     color:black;
+}
+
+#linha{
+    background-color: darkmagenta;
 }
 
 div.btn{
@@ -41,7 +49,37 @@ a:hover{
     color:white;
 }
 
+div.btn:active{
+    background-color: palevioletred;
+}
+
 /*index*/
+figure{
+    text-align: center;
+    margin:2px auto;
+}
+
+.capa{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    border:4px solid palevioletred;
+}
+
+.capa1{
+    width: 530px;
+    border:4px solid palevioletred;
+    margin: 10px auto;
+    display: block;
+}
+
+.figcaption {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #333;
+  text-align: center;
+}
+
 #tabela{
     padding:10pt;
     color:black;
@@ -50,7 +88,7 @@ a:hover{
 }
 
 .engxodonto{
-    display:flex;
+    display:flex;/*ordena o elemento no próximo espaço em branco que tiver*/
     align-items: center;
     gap:20px;
     margin: 1pt;
@@ -78,14 +116,33 @@ a:hover{
 
 /*hobbies*/
 h4{
-    font-size: 15pt;
+    font-size: 18pt;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightblue;
+    background-color: lightpink;
     display: inline;
 }
 
-#livros{
+h7{
+    font-size: 14pt;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;   /* alinha horizontalmente */
+    align-items: center;       /* alinha verticalmente */   
+}
+
+.hobbies{
+    width: 300px;  
+    margin:5px;   
+    border:solid 4px lightpink;
+}
+
+.livros{
     display: flex;
     flex-wrap: wrap; /* para quebrar linha se faltar espaço */
     gap: 20px;
@@ -107,6 +164,22 @@ h4{
   font-size: 14px;
   margin-top: 8px;
   color: #333;
+}
+
+.viagem img{
+    width: 300px;  
+    margin:5px;   
+    border:solid 4px lightpink;
+}
+
+[src$='MOV']{
+    margin:5px;   
+    border:solid 4px lightpink;
+    width: 300px;
+}
+
+.separa{
+    background-color: lightpink;
 }
 
 /*curiosidades*/
@@ -137,7 +210,6 @@ h4{
     display: inline-block;
     padding:2%;
     margin:5%;
-    box-sizing: border-box;
 }
 
 #pizza,#sorvete{

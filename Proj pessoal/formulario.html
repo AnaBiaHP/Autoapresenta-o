@@ -24,12 +24,13 @@
             </div>
         </nav>
     </div>
+    <div id="linha"> &nbsp;</div>
     <section id="main">
         <from action=" " method="get" name="Quiz">
             <h2>Quiz:</h2>
             <fieldset>
-            <label for="nome">Nome: </label>
-            <input type="text" name="txtNome" id="txtNome" size="15" required/>
+            <label for="nome">Nome dos meus cachorros: </label>
+            <input type="text" name="txtNome" id="txtNome" size="40" required/>
             <br/>
             <label for="dtNascimento">Data Nascimento: </label>
             <input type="date" name="DtNascimento" id="dtNascimento" required>
@@ -50,8 +51,27 @@
                 <option value="Itália"></option>
                 <option value="Coreia"></option>
             </datalist>
+            <br/>
+            <label for="linguas"> Línguas que eu falo:    </label><br/>
+            <label for="francês">    Francês</label>
+            <input type="checkbox" name="linguas"
+                id="frances" value="Francês"/>
+            <label for="italiano"> Italiano </label>
+            <input type="checkbox" name="linguas"
+                id="italiano" value="Italiano"/>
+            <label for="alemao"> Alemão </label>
+            <input type="checkbox" name="linguas"
+                id="alemao" value="Alemão"/>
+            <label for="ingles"> Inglês </label>
+            <input type="checkbox" name="linguas"
+                id="ingles" value="Inglês"/>
+            <label for="esp"> Espanhol </label>
+            <input type="checkbox" name="linguas"
+                id="esp" value="Espanhol"/>
+            &nbsp;
             </fieldset>
             <input type="submit" value="Salvar">
+            </br></br>
     </section>
 <footer id="rodape">Autoapresentação-08/08/2025</footer>
 </body>
